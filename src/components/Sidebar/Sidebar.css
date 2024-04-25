@@ -1,0 +1,45 @@
+.img {
+    height: 5rem;
+    width: 5rem;
+    object-fit: cover;
+    border-radius: 30%;
+    margin: 1rem auto; /* Adjust margin for centering */
+}
+
+.list-group-item {
+    background: linear-gradient(135deg, #1E90FF, #0047AB);
+    border: none;
+    font-family: "Playfair Display", serif;
+    font-size: 17px;
+    color: white;
+}
+
+.list-group-item i {
+    font-size: 15px;
+}
+
+.list-group-item:hover {
+    background: blue;
+}
+
+.card {
+    background: linear-gradient(135deg, #1E90FF, #00BFFF);
+    min-height: 100vh; /* Use min-height to ensure card expands with content */
+    border: none;
+    display: flex; /* Use flex display for responsive layout */
+    flex-direction: column; /* Align children in column */
+    justify-content: space-between; /* Align items with space between */
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.socials {
+    display: flex; /* Use flex display for horizontal alignment */
+    justify-content: center; /* Align items horizontally */
+}
+
+.socials .list-group-item {
+    margin: 0 5px; /* Adjust spacing between social icons */
+}
