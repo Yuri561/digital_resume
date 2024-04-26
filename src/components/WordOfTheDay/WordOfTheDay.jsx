@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* trunk-ignore-all(prettier) */
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './WordOfTheDay.css';
@@ -20,6 +22,7 @@ const WordOfTheDay = () => {
       };
       try {
         const response = await axios.request(options);
+// sourcery skip: use-object-destructuring
         const word = response.data.word;
         const results = response.data.results;
         
@@ -41,15 +44,15 @@ const WordOfTheDay = () => {
 
   return (
     <div className='parent-container'>
-      <div className="card text-center word h-25" style={{ height: '200px' }}>
-        <div className="card-header">
+      <div className="word-box text-center">
+        <div className="word-title">
           Word For Today
         </div>
-        <div className="card-body">
-          <h5 className="card-title">{word}</h5>
-          <p className="card-text">{definition}</p>
+        <div className="word-content">
+          <h5 className="">{word}</h5>
+          <p className="">{definition}</p>
         </div>
-        <div className="card-footer text-body-secondary">
+        <div className="word-footer">
           Frontend Developer 
         </div>
       </div>

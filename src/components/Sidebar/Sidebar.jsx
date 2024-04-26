@@ -14,19 +14,19 @@ const Sidebar = () => {
         <a href="#" className="btn btn-primary">Connect</a>
 
         <div className="list-group mt-3 gap-3 text-light">
-          <button type="button" className="list-group-item list-group-item-action" aria-current="true">
+          <li type="button" className="list-group-item list-group-item-action" aria-current="true">
           <i className="bi bi-house-fill icon"></i>
             Dashboard
-          </button>
+          </li>
            {/* Corrected here */}
-          <button type="button" className="list-group-item list-group-item-action ">
-          <i class="bi bi-building icon"></i>Education</button>
-          <button type="button" 
+          <li  className="list-group-item list-group-item-action ">
+          <i className="bi bi-building icon"></i>Education</li>
+          <li type="button"
            className="list-group-item list-group-item-action">
-          <i class="bi bi-card-list icon"></i>Projects</button>
-          <button type="button" className="list-group-item list-group-item-action ">
-          <i class="bi bi-person-badge icon"></i>About</button>
-          <button type="button" className="list-group-item list-group-item-action " >Hobbies</button>
+          <i className="bi bi-card-list icon"></i>Projects</li>
+          <li className="list-group-item list-group-item-action ">
+          <i className="bi bi-person-badge icon"></i>About</li>
+          <li  className="list-group-item list-group-item-action">Hobbies</li>
         </div>
 
       </div>

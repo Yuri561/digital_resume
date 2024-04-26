@@ -1,13 +1,24 @@
-.Wrapper {
+.main-wrapper {
     height: 97vh;
-    width: auto;
     background: linear-gradient(135deg, #007bff, #ffd700);
     border-radius: 2rem;
-    padding-top: 20rem; /* Add padding to top */
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background: purple;
+    overflow: hidden;
+    
+.dashboard-container{
+  display: grid;
+  grid-template-columns: 18rem auto 18rem;
+  gap: 10px;
+}
   }
   
   .title {
-    margin-bottom: 2rem; /* Add margin below the title */
+    margin-bottom: 2rem;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
   }
   
   .box-group {
