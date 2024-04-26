@@ -23,7 +23,8 @@
 }
 
 .card {
-    background: linear-gradient(135deg, #1E90FF, #00BFFF);
+    background: rgba(0, 0, 0, 0.294);
+    color: white;
     min-height: 100vh; /* Use min-height to ensure card expands with content */
     border: none;
     display: flex; /* Use flex display for responsive layout */

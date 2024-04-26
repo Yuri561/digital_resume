@@ -1,6 +1,6 @@
 .app{
     color: aliceblue;
-    background: #4B0082;
+    background: #111111;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -10,9 +10,9 @@
 
 .glass{
     display: grid;
-   height: 97%;
+    height: 97%;
     width: 97%;
-    background: linear-gradient(135deg, #4B0082, #8A2BE2);
+    background: rgba(0, 0, 0, 0.294);
     border-radius: 2rem;
     gap: 10px;
     grid-template-columns: 18rem auto 18rem;
