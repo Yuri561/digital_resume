@@ -29,6 +29,7 @@ const WordOfTheDay = () => {
         // Check if results array is empty or undefined
         if (results && results.length > 0) {
           const wordDefinition = results[0].definition;
+          console.log(wordDefinition);
           setWord(word);
           setDefinition(wordDefinition);
         } else {

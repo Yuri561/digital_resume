@@ -50,7 +50,11 @@
     bottom: 5rem;
     background: linear-gradient(135deg, #a64dff, #ffd11a);
     color:  #fff /* Text color */
-    filter: brightness(110%);
+
+}
+
+.word-content:hover{
+    transition: background 0.3s ease-in-out;
 }
 
 .neon-purple {
