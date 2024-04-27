@@ -27,11 +27,32 @@
     color: white;
     min-height: 100vh; /* Use min-height to ensure card expands with content */
     border: none;
+    flex: 1;
+
+}
+.sidebar-container{
+    background: rgba(0, 0, 0, 0.294);
+    color: white;
+    min-height: 100vh; /* Use min-height to ensure card expands with content */
+    border: none;
     display: flex; /* Use flex display for responsive layout */
     flex-direction: column; /* Align children in column */
-    justify-content: space-between; /* Align items with space between */
+    gap: 1rem; /* Adjust spacing between children */
 }
 
+.typewrite{
+    font-size: 17px;
+    font-family: "Orbitron", sans-serif;
+    color: #6d83ff;
+    margin-bottom: 25px;
+
+}
+
+.music{
+    height: auto;
+    width: 100%;
+    margin-bottom: 2rem;
+}
 .icon {
     margin-right: 10px;
 }

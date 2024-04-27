@@ -14,6 +14,7 @@ import Typography from "@mui/material/Typography";
 import SkipPreviousIcon from "@mui/icons-material/SkipPrevious";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import SkipNextIcon from "@mui/icons-material/SkipNext";
+import { Typewriter } from "react-simple-typewriter";
 
 import afroHouse from '../../img/afroHouse.png';
 
@@ -21,41 +22,52 @@ import afroHouse from '../../img/afroHouse.png';
 const Sidebar = () => {
   const theme = useTheme();
   return (
-    <div className="card text-center" style={{ width: "18rem" }}>
-      <div className="card-body">
+    <div className="container text-center" style={{ width: "18rem" }}>
+      <div className="container-content">
         <img src={Logo} className="card-img-top img" alt="" />
         <h5 className="card-title">Yuri Pierre-Louis</h5>
         <p className="card-text">Aspiring Full-Stack Developer</p>
         <a href="#" className="btn btn-primary">
           Connect
         </a>
+      </div>
 
-        <div className="list-group mt-3 gap-3 text-light">
-          <li
-            type="button"
-            className="list-group-item list-group-item-action"
-            aria-current="true"
-          >
-            <i className="bi bi-house-fill icon"></i>
-            Dashboard
-          </li>
-          {/* Corrected here */}
-          <li className="list-group-item list-group-item-action ">
-            <i className="bi bi-building icon"></i>Education
-          </li>
-          <li type="button" className="list-group-item list-group-item-action">
-            <i className="bi bi-card-list icon"></i>Projects
-          </li>
-          <li className="list-group-item list-group-item-action ">
-            <i className="bi bi-person-badge icon"></i>About
-          </li>
-          <li className="list-group-item list-group-item-action">Hobbies</li>
-        </div>
-        <div className='music-container mt-5'>
-        
-        
-        
-        <Card sx={{ display: "flex" }}>
+      <div className="list-group mt-3 gap-3 text-light">
+        <li
+          type="button"
+          className="list-group-item list-group-item-action"
+          aria-current="true"
+        >
+          <i className="bi bi-house-fill icon"></i>
+          Dashboard
+        </li>
+        {/* Corrected here */}
+        <li className="list-group-item list-group-item-action ">
+          <i className="bi bi-building icon"></i>Education
+        </li>
+        <li type="button" className="list-group-item list-group-item-action">
+          <i className="bi bi-card-list icon"></i>Projects
+        </li>
+        <li className="list-group-item list-group-item-action ">
+          <i className="bi bi-person-badge icon"></i>About
+        </li>
+        <li className="list-group-item list-group-item-action">Hobbies</li>
+      </div>
+      <div className="music-container mt-5">
+      <div className='text-center typewrite'>
+        <Typewriter
+          words={[
+            "Vibe to my playlist",
+            "best genre of music to code to!",
+          ]}
+          loop={0}
+          cursor
+          typeSpeed={50}
+          deleteSpeed={60}
+          delaySpeed={1000}
+        />
+      </div>
+        <Card sx={{ display: "flex" }} className="music">
           <Box sx={{ display: "flex", flexDirection: "column" }}>
             <CardContent sx={{ flex: "1 0 auto" }}>
               <Typography component="div" variant="h5">
@@ -91,23 +103,28 @@ const Sidebar = () => {
           </Box>
           <CardMedia
             component="img"
-            sx={{ width: 151}}
+            sx={{ width: 151 }}
             image={afroHouse}
             alt=""
           />
         </Card>
-        </div>
       </div>
       <div className="card-footer">
         <div className="socials">
-          <ul className="list-group list-group-horizontal mb-5">
-            <a href="" className="list-group-item">
+          <ul className="list-group list-group-horizontal">
+            <a
+              href="https://www.instagram/yuri.vankor"
+              className="list-group-item"
+            >
               <i className="bi bi-instagram"></i>
             </a>
-            <a href="" className="list-group-item">
+            <a
+              href="https://www.linkedin.com/in/houbenove-pierre-louis/"
+              className="list-group-item"
+            >
               <i class="bi bi-linkedin"></i>
             </a>
-            <a href="" className="list-group-item">
+            <a href="https://github.com/Yuri561" className="list-group-item">
               <i class="bi bi-github"></i>
             </a>
           </ul>
@@ -115,7 +132,7 @@ const Sidebar = () => {
         </div>
       </div>
     </div>
-  );
+  ); // Add closing parenthesis here
 }
 
 export default Sidebar;
