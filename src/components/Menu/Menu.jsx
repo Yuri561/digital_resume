@@ -1,20 +1,25 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Menu.css'
-import { menuData } from '../../utils/menuData';
+import { menuData } from '../Data/menuData';
 
 const Menu = () => {
+  const [selected, setSelected] = useState(0);
   return (
-    <div className='container'>
-         <div className="list-group mt-3 gap-3 text-light">
-       {menuData.map((item, index) => (
-          <li key={index} className='list-group-item'>
-            <span>{item.icons}</span>
+    <div className="container">
+      {menuData.map((item, index) => (
+        <div
+          className={selected === index ? "menuItem active" : "menuItem"}
+          key={index}
+          onClick={() => setSelected(index)}
+        >
+          <li className="list-group-item">
+            <item.icon/>
             <span>{item.text}</span>
           </li>
-       ))}
-      </div>
+        </div>
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default Menu
+export default Menu;

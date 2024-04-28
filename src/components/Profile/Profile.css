@@ -5,3 +5,8 @@
     border-radius: 30%;
     margin: 1rem auto; /* Adjust margin for centering */
 }
+
+.connect{
+    background: linear-gradient(135deg, #FF6A00, #8E2DE2);
+    color: #ffffff; /* Text color */;
+}

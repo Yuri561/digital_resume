@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react';
 import './Main.css';
 import WordOfTheDay from '../WordOfTheDay/WordOfTheDay';
@@ -16,8 +17,8 @@ const Main = () => {
     console.log('done after 5 loops');
   }
   
-  const handleType = (text) => {
-    console.log(text);
+  const handleType = () => {
+    // console.log(text);
   }
 
   const [randomVideo, setRandomVideo] = useState('');
@@ -46,7 +47,7 @@ const Main = () => {
         <span className="text-center typewriter h4">
           <Typewriter
             words={[
-              "Hello welcome home is a pleasure to have you back",
+              "Hello welcome home is a pleasure to have you",
               "hover over Vera to get started!!",
             ]}
             loop={0}

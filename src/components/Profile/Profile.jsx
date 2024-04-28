@@ -9,8 +9,8 @@ const Profile = () => {
     <div className="p-2 text-center container-content">
     <img src={Logo} className="card-img-top img" alt="" />
     <h5 className="card-title">Yuri Pierre-Louis</h5>
-    <p className="card-text">Aspiring Full-Stack Developer</p>
-    <a href="#" className="btn btn-primary">
+    <p className="card-text">Full-Stack Developer</p>
+    <a href="#" className="btn connect">
       Connect
     </a>
   </div>
