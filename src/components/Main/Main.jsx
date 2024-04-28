@@ -41,7 +41,7 @@ const Main = () => {
   }, []); // Run only once when the component mounts
 
   return (
-    <div className="main-wrapper w-100 d-flex flex-column justify-content-center align-items-center">
+    <div className="MainDash main-wrapper w-100 d-flex flex-column justify-content-center align-items-center">
       <div className="dashboard-container w-100 d-flex flex-column">
         <h1 className="title text-center mt-5">Dashboard</h1>
         <span className="text-center typewriter h4">
