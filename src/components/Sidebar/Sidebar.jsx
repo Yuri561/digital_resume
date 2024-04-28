@@ -1,8 +1,5 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/no-unknown-property */
 import React from 'react';
 import './Sidebar.css';
-import Logo from '../../assets/img.jpeg';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
@@ -17,41 +14,18 @@ import SkipNextIcon from "@mui/icons-material/SkipNext";
 import { Typewriter } from "react-simple-typewriter";
 
 import afroHouse from '../../img/afroHouse.png';
+import Profile from '../Profile/Profile';
+import Menu from '../Menu/Menu';
 
 
 const Sidebar = () => {
   const theme = useTheme();
   return (
     <div className="container text-center" style={{ width: "18rem" }}>
-      <div className="container-content">
-        <img src={Logo} className="card-img-top img" alt="" />
-        <h5 className="card-title">Yuri Pierre-Louis</h5>
-        <p className="card-text">Aspiring Full-Stack Developer</p>
-        <a href="#" className="btn btn-primary">
-          Connect
-        </a>
-      </div>
+      <Profile/>
 
       <div className="list-group mt-3 gap-3 text-light">
-        <li
-          type="button"
-          className="list-group-item list-group-item-action"
-          aria-current="true"
-        >
-          <i className="bi bi-house-fill icon"></i>
-          Dashboard
-        </li>
-        {/* Corrected here */}
-        <li className="list-group-item list-group-item-action ">
-          <i className="bi bi-building icon"></i>Education
-        </li>
-        <li type="button" className="list-group-item list-group-item-action">
-          <i className="bi bi-card-list icon"></i>Projects
-        </li>
-        <li className="list-group-item list-group-item-action ">
-          <i className="bi bi-person-badge icon"></i>About
-        </li>
-        <li className="list-group-item list-group-item-action">Hobbies</li>
+       <Menu/>
       </div>
       <div className="music-container mt-5">
       <div className='text-center typewrite'>
@@ -132,7 +106,7 @@ const Sidebar = () => {
         </div>
       </div>
     </div>
-  ); // Add closing parenthesis here
+  );
 }
 
 export default Sidebar;
