@@ -6,6 +6,7 @@ import { Typewriter } from 'react-simple-typewriter';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { DateCalendar } from '@mui/x-date-pickers/DateCalendar';
+import VanillaTilt from "vanilla-tilt";
 
 const Main = () => {
   const time = new Date();
@@ -40,6 +41,15 @@ const Main = () => {
     selectRandomVideo();
   }, []); // Run only once when the component mounts
 
+  useEffect(() => {
+    VanillaTilt.init(document.querySelectorAll('.box'), {
+      max: 25,
+      speed: 400,
+      glare: true,
+      "max-glare": 0.5
+    });
+  },[])
+
   return (
     <div className="MainDash main-wrapper w-100 d-flex flex-column justify-content-center align-items-center">
       <div className="dashboard-container w-100 d-flex flex-column">
@@ -61,7 +71,7 @@ const Main = () => {
         </span>
 
         <div className="box-group d-flex justify-content-center">
-          <div className="box flex-column" id="box1">
+          <div data-tilt className="box flex-column" id="box1">
             <i className="bi bi-sun-fill"></i>
             <h5 className="h1 p-2">{format.toString()}</h5>
           </div>

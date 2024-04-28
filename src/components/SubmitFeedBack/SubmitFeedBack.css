@@ -1,0 +1,11 @@
+
+.sub {
+  background: linear-gradient(135deg, #FF5733, #581845);
+  transition: background-color 0.3s ease;
+}
+
+.sub:hover {
+  background: linear-gradient(135deg, #FF855B, #75345F);
+  box-shadow: #FF5733;
+ 
+}

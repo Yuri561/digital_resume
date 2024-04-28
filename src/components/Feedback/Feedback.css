@@ -1,7 +1,7 @@
 
 .feedback-wrapper{
     width: 85%;
-    background: white;
+    background: linear-gradient(135deg, #FF8C00, #4B0082);
     border-radius: 0.7rem;
     padding: 1rem;
     gap: 1rem;

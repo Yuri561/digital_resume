@@ -7,19 +7,19 @@ export const FeedbackData = [
   {
     img: img1,
     name: "Andrew Thomas",
-    noti: "has ordered ",
+    noti: "Love the UI design, keep it up!",
     time: "25 seconds ago",
   },
   {
     img: img2,
     name: "James Night",
-    noti: "received Controller for RTU-1",
+    noti: "wonderful work experience",
     time: "30 minutes ago",
   },
   {
     img: img3,
     name: "Laila Evans",
-    noti: "has ordered Float Switch for RTU-2.",
+    noti: "wow great job with the buttons",
     time: "2 hours ago",
   },
 

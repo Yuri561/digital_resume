@@ -9,7 +9,14 @@ import MusicPlayer  from '../MusicPlayer/MusicPlayer';
 
 const Sidebar = () => {
   return (
-    <div className="container text-center" style={{ width: "18rem" }}>
+    <aside
+      className="container text-center position-relative"
+      style={{ width: "18rem" }}
+    >
+      <button
+        className="btn position-absolute btn-primary close-btn"
+        type="button"
+      ></button>
       <Profile />
 
       <div className="list-group mt-3 gap-3 text-light">
@@ -28,18 +35,23 @@ const Sidebar = () => {
             </a>
             <a
               href="https://www.linkedin.com/in/houbenove-pierre-louis/"
-              className="list-group-item" target="_blank"
+              className="list-group-item"
+              target="_blank"
             >
               <i className="bi bi-linkedin"></i>
             </a>
-            <a href="https://github.com/Yuri561" className="list-group-item" target="_blank">
+            <a
+              href="https://github.com/Yuri561"
+              className="list-group-item"
+              target="_blank"
+            >
               <i className="bi bi-github"></i>
             </a>
           </ul>
           {/* Corrected here */}
         </div>
       </div>
-    </div>
+    </aside>
   );
 }
 
