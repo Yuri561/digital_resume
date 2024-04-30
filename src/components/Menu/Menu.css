@@ -9,9 +9,14 @@
     color: #fff;
     font-family: "Playfair Display", serif;
     font-size: 17px;
+    cursor: pointer;
+    list-style-type: none;
 }
 
-
+.link{
+  cursor: pointer;
+  text-decoration: none !important;
+}
 
 .menuItem {
   display: flex;
@@ -22,6 +27,7 @@
   position: relative;
   transition: all 300ms ease;
   font-size: 14px;
+
 }
 .menuItem:hover {
   cursor: pointer;
@@ -32,6 +38,8 @@
   bottom: 2.3rem;
   width: 100%;
 }
+
+
 
 .active {
   background: linear-gradient(135deg, #FF6A00, #8E2DE2);

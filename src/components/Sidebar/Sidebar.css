@@ -8,12 +8,21 @@
 
 }
 
+
 .close-btn{
-    right: -25px;
+    position: absolute;
+    right: 3px !important;
     padding-top: 10px;
 }
+.btn-close{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
 
-
+}
+.bg{
+    background: black
+}
 
 .sidebar-container{
     background: rgba(0, 0, 0, 0.294);
