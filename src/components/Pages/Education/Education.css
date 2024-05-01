@@ -1,28 +1,70 @@
 .schools {
     display: flex;
     margin-top: 5%;
-}
-
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    color: black;
-    display: flex;
     justify-content: center;
-    width: 15rem; /* Set the width to match the box width */
-    height: 15rem; /* Set the height to match the box height */
+    flex-wrap: wrap;
+    position: relative;
+    
 }
 
-.swiper {
-    height: 30%;
-    width: 100%; /* Set the width to take up the full width of its container */
+.card {
+  position: absolute;
+  width: 200px; /* Adjust width as desired */
+  height: 200px !important; /* Adjust height as desired */
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
-#card-1 {
-    /* Adjust background properties to cover the entire card */
-    background: url('../../../img/ihs.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+.card svg {
+  width: 48px;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card:hover {
+  transform: rotate(-5deg) scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 200px; /* Adjust width as desired */
+  height: 200px !important; /* Adjust height as desired */
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card:hover .card__content {
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 1;
+}
+
+.card__title {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+}
+
+.card__description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+}
+
+.card:hover svg {
+  scale: 0;
+  transform: rotate(-45deg);
 }
