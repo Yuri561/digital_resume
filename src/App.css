@@ -20,8 +20,10 @@
 }
 
 
-/* @media screen and (max-width: 1200px) {
+ @media screen and (max-width: 1200px) {
     .glass{
+      height: 100%;
+      width: 100%;
       grid-template-columns: 10% 50% auto;
       overflow-y: scroll;
     } 
@@ -31,4 +33,4 @@
     .glass{
       grid-template-columns: 1fr;
     } 
-  } */
+  } 

@@ -1,0 +1,28 @@
+.schools {
+    display: flex;
+    margin-top: 5%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    color: black;
+    display: flex;
+    justify-content: center;
+    width: 15rem; /* Set the width to match the box width */
+    height: 15rem; /* Set the height to match the box height */
+}
+
+.swiper {
+    height: 30%;
+    width: 100%; /* Set the width to take up the full width of its container */
+}
+
+#card-1 {
+    /* Adjust background properties to cover the entire card */
+    background: url('../../../img/ihs.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

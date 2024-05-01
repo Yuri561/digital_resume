@@ -3,7 +3,7 @@ import "./Rightside.css";
 import Feedback from './../Feedback/Feedback';
 import FeedbackReview from './../FeedbackReview/FeedbackReview';
 import SubmitFeedBack from "../SubmitFeedBack/SubmitFeedBack";
-
+import VanillaTilt from "vanilla-tilt";
 const RightSide = () => {
     useEffect(() => {
       VanillaTilt.init(document.getElementById("submit"), {

@@ -2,17 +2,32 @@
 .card {
     background: rgba(0, 0, 0, 0.294);
     color: white;
-    min-height: 100vh; /* Use min-height to ensure card expands with content */
+    height: auto;
     border: none;
     flex: 1;
 
 }
 
 
+.close-btn{
+    position: absolute;
+    right: 3px !important;
+    padding-top: 10px;
+}
+.btn-close{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+}
+.bg{
+    background: black
+}
+
+
 .sidebar-container{
     background: rgba(0, 0, 0, 0.294);
     color: white;
-    min-height: 100vh; /* Use min-height to ensure card expands with content */
     border: none;
     display: flex; /* Use flex display for responsive layout */
     flex-direction: column; /* Align children in column */
@@ -76,5 +91,16 @@
     }
     .close{
       left: -60%;
+    }
+  }
+  @media screen and (min-width: 1040px) {
+    .sidebar-container{
+      position: fixed;
+      background: #000000;
+      width: 55%;
+      height: auto;
+      font-size: 20px;
+      padding: 2rem;
+      
     }
   }
