@@ -36,13 +36,13 @@ const Main = () => {
     // Add more video IDs or URLs as needed
   ];
 
-  const selectRandomVideo = () => {
+  const getRandomVideo = () => {
     const randomIndex = Math.floor(Math.random() * videos.length);
     setRandomVideo(videos[randomIndex]);
   };
 
   useEffect(() => {
-    selectRandomVideo();
+    getRandomVideo();
   }, []); // Run only once when the component mounts
 
   useEffect(() => {
