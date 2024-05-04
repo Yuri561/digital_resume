@@ -24,8 +24,7 @@ const MusicPlayer = () => {
 	const theme = useTheme();
 
 	//setting volume
-	Howler.volume(0.5);
-
+	
 	useEffect(() => {
 		// Set initial state based on the first item in the music data array
 		const firstSong = mD[0];
