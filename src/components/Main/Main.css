@@ -1,16 +1,9 @@
 .main-wrapper {
-    height: 97vh;
+    height: auto;
     border-radius: 2rem;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
     background: rgba(0, 0, 0, 0.294);
     overflow: hidden;
-    
-.dashboard-container{
-  display: grid;
-  grid-template-columns: 18rem auto 18rem;
-  gap: 10px;
-}
+
   }
   
   .title {
@@ -21,7 +14,8 @@
   }
 
   .typewriter{
-    font-size: 2rem;
+    
+    
     font-family: "Orbitron", sans-serif;
     color: #8E2DE2;
   }
@@ -56,18 +50,18 @@
   .box-group {
     padding: 2rem;
     flex: 1;
-    height: 7rem;
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: center;
     gap: 1rem;
+    overflow: hidden;
     background: linear-gradient(135deg, #141E30, #FFFFFF);
   }
   
   .box {
     margin-top: 2rem; /* Adjust margin between title and boxes */
-    width: 15rem;
-    height: 15rem;
+    width: 10rem;
+    height: 10rem;
     background: white;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Futuristic box shadow */
     border-radius: 2rem;
@@ -99,7 +93,10 @@
     background-color: rgb(152 151 151 / 25%); /* Just adjust the color or opacity to make the text pop! */
     box-shadow: inset 0 0 0 200px rgb(255 255 255 / 8%);
   }
-  
+  .bi-sun-fill  {
+    position: relative;
+    font-size: ;
+  }
   #box3 {
     border-radius: 2rem;
     filter: drop-shadow(2px 4px 6px black);
@@ -151,15 +148,21 @@
     overflow-x: auto;
   }
 
- .calendar-content .calendar {
-  width: 15rem;
-  height: 15rem;
-}
-
-.MuiPickersDay-root {
-  font-size: 5px;
-  padding: 5px;
-}
+  .calendar {
+    width: 100%; /* Adjust the width as needed */
+    height: 100%; /* Adjust the height as needed */
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .MuiPickersDay-root {
+    font-size: 1rem; /* Adjust the font size as needed */
+    padding: 5px; /* Adjust the padding as needed */
+    width: 3px; /* Adjust the width of each day cell as needed */
+    height: 3px; /* Adjust the height of each day cell as needed */
+  }
   .bi-sun-fill {
     font-size: 5rem;
     color: #ffd700;

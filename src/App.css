@@ -1,36 +1,68 @@
-.app{
-    color: aliceblue;
-    background: #111111;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+.app {
+  color: aliceblue;
+  background: #111111;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.glass{
-    display: grid;
-    height: 97%;
-    width: 97%;
-    background: rgba(0, 0, 0, 0.294);
-    border-radius: 2rem;
-    gap: 10px;
-    grid-template-columns: 18rem auto 18rem;
-    overflow: hidden;
+.glass {
+  display: grid;
+  height: 97%;
+  width: 97%;
+  background: rgba(0, 0, 0, 0.294);
+  border-radius: 2rem;
+  gap: 10px;
+  grid-template-columns: 18rem auto 18rem;
+  overflow: hidden;
 }
 
+.container-main {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
 
- @media screen and (max-width: 1200px) {
-    .glass{
+@media screen and (max-width: 1536px) {
+  .container-main {
+      max-width: 1280px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .container-main {
+      max-width: 1024px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container-main {
+      width: 100%;
+      padding: 2rem;
+      height: max-content;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-main {
+      max-width: 648px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .glass {
       height: 100%;
       width: 100%;
       grid-template-columns: 10% 50% auto;
       overflow-y: scroll;
-    } 
   }
-  
-  @media screen and (max-width: 768px) {
-    .glass{
+}
+
+@media screen and (max-width: 768px) {
+  .glass {
       grid-template-columns: 1fr;
-    } 
-  } 
+  }
+}

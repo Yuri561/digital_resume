@@ -9,7 +9,10 @@ const Menu = () => {
   const [selected, setSelected] = useState(0);
 
   return (
-    <div className='container'>
+    <div className='container d-flex flex-column'>
+      <div className='menu-content'>
+
+
       {menuData.map((item, index) => (
         <div
           className={selected === index ? 'menuItem active' : 'menuItem'}
@@ -24,6 +27,7 @@ const Menu = () => {
           </Link>
         </div>
       ))}
+      </div>
     </div>
   );
 };

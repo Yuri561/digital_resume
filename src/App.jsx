@@ -13,7 +13,7 @@ function App() {
   return (
     <Router>
       <div className='app'>
-        <div className='glass'>
+        <div className='glass container-main'>
           <Sidebar />
           {/* Use Routes component to define routes */}
           <Routes>

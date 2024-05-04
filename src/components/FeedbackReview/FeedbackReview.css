@@ -1,5 +1,10 @@
+.CustomerReview {
+  position: relative;
+  margin: auto; /* Center the container horizontally */
+  max-width: 100%; /* Limit the width to prevent overflow */
+  height: auto; /* Allow the height to adjust based on content */
+}
 
-
-.apexcharts-menu {
-    fill: black !important;
-  }
+.ChartContainer {
+  overflow: auto; /* Enable vertical scrolling if needed */
+}

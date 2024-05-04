@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import './Main.css';
-import WordOfTheDay from '../WordOfTheDay/WordOfTheDay';
 import { Typewriter } from 'react-simple-typewriter';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
@@ -52,19 +51,21 @@ const Main = () => {
       glare: true,
       'max-glare': 0.5,
     });
-  }, []);
+  }, [randomVideo]);
 
   return (
     <motion.div
-      className='MainDash main-wrapper w-100 d-flex flex-column justify-content-center align-items-center'
-      initial={{ scale: 0 }} // Initial state: scaled down
-      animate={{ scale: 1 }} // Animation: zoom in to full size
-      exit={{ scale: 0 }} // Exit animation: scale down to hide
-      transition={{ type: 'spring', stiffness: 260, damping: 20 }} // Smooth spring transition
-    >
-      <div className='dashboard-container w-100 d-flex flex-column'>
+  className='MainDash main-wrapper d-flex position-relative flex-direction-column justify-content-center align-items-center w-100'
+  initial={{ scale: 0 }} // Initial state: scaled down
+  animate={{ scale: 1 }} // Animation: zoom in to full size
+  exit={{ scale: 0 }} // Exit animation: scale down to hide
+  transition={{ type: 'spring', stiffness: 260, damping: 20 }} // Smooth spring transition
+>
+      <div className='flex-column h-100 w-100'>
+        <div className='dashboard-content position-relative my-2 py-md-2'>
+
         <h1 className='title text-center mt-5'>Dashboard</h1>
-        <span className='text-center typewriter h4'>
+        <p className='text-center typewriter fs-6'>
           <Typewriter
             words={[
               'Hello welcome home is a pleasure to have you',
@@ -77,13 +78,14 @@ const Main = () => {
             delaySpeed={1000}
             onLoopDone={handleDone}
             onType={handleType}
+            className=' position-relative'
           />
-        </span>
+        </p>
+        <div className=' position-relative box-group mh-100 justify-content-center'>
+          <div data-tilt className='box' id='box1' style={{height: '10rem', width: '10rem'}}>
+            <i className='bi bi-sun-fill fs-3 '></i>
+            <h5 className='p-2 fs-lg-5'>{format.toString()}</h5>
 
-        <div className='box-group d-flex justify-content-center'>
-          <div data-tilt className='box flex-column' id='box1'>
-            <i className='bi bi-sun-fill'></i>
-            <h5 className='h1 p-2'>{format.toString()}</h5>
           </div>
           <div className='box' id='box2'>
             <iframe
@@ -107,12 +109,14 @@ const Main = () => {
           <div className='box' id='box4'>
             <div className='calendar-content'>
               <LocalizationProvider dateAdapter={AdapterDayjs}>
-                <DateCalendar className='calendar' />
+                <DateCalendar className='calendar position-relative' />
               </LocalizationProvider>
             </div>
           </div>
         </div>
-        <WordOfTheDay />
+
+        </div>
+
       </div>
     </motion.div>
   );

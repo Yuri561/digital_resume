@@ -128,12 +128,13 @@ const FeedbackReview = () => {
   };
 
   return (
-    <div className="CustomerReview">
+    <div className="CustomerReview container py-2 bg-primary ">
       <Chart
         options={options}
         series={options.series}
         type="line"
         height={350}
+        className="ChartContainer"
       />
     </div>
   );

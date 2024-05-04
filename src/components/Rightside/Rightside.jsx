@@ -14,15 +14,11 @@ const RightSide = () => {
       });
     }, []);
   return (
-    <aside className="RightSide">
-      <div>
+    <aside className="RightSide container w-100">
+      <div className="content h-100">
         <h3 className="mt-2">Feedback</h3>
         <Feedback />
-        <SubmitFeedBack id='submit' />
-      </div>
-      <div>
-        <h3>Ratings</h3>
-        <FeedbackReview />
+        <SubmitFeedBack id='submit'/>
       </div>
     </aside>
   );

@@ -11,10 +11,10 @@ import Typography from '@mui/material/Typography';
 import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import SkipNextIcon from '@mui/icons-material/SkipNext';
-import { Howl, Howler } from 'howler';
 import { Typewriter } from 'react-simple-typewriter';
 import afroHouse from '../../img/afroHouse.png';
 import mD from '../Data/musicData';
+import sound from '../../../public/black.mp3'
 
 const MusicPlayer = () => {
 	const [songTitle, setSongTitle] = useState('');
@@ -37,23 +37,18 @@ const MusicPlayer = () => {
 	const song = document.getElementById('audio');
 	let currentMusic = 0;
 	// Function to handle play state
-	const playMusic = (src) => {
-		const sound = new Howl({
-			src: [src],
-			loop: true,
-			volume: 0.5,
-			onplay: () => {
-				console.log('Sound playing');
-			},
-		});
+	const playMusic = () => {
 
-		sound.play();
+		new Audio (sound).play()
+		
+
+		
 	};
 
 	return (
-		<div className='container music-container mt-5 mb-5'>
-			<div className='text-center typewrite'>
-				<audio id='audio'></audio>
+		<div className='container mt-2 mb-5 d-flex flex-column h-auto w-auto'>
+			<div className='text-center typewrite display 5 h-auto'>
+				
 				<Typewriter
 					words={['Vibe to my playlist', 'best genre to code to!']}
 					loop={0}
@@ -63,7 +58,7 @@ const MusicPlayer = () => {
 					delaySpeed={1000}
 				/>
 			</div>
-			<Card sx={{ display: 'flex' }} className='music'>
+			<Card sx={{ display: 'flex', height: 'auto' }} className='position-relative'>
 				<Box sx={{ display: 'flex', flexDirection: 'column' }}>
 					<CardContent sx={{ flex: '1 0 auto' }}>
 						<Typography component='div' variant='h5'>
@@ -85,10 +80,13 @@ const MusicPlayer = () => {
 							)}
 						</IconButton>
 						<IconButton aria-label='play/pause' id='play'>
+
 							<PlayArrowIcon
+								id = 'audio'
 								sx={{ height: 38, width: 38 }}
-								onClick={() => playMusic(mD[songID - 1]?.src)} // Pass the src of the selected music
+								onClick={playMusic} // Pass the src of the selected music
 							/>
+							
 						</IconButton>
 						<IconButton aria-label='next'>
 							{theme.direction === 'rtl' ? (
