@@ -23,8 +23,12 @@ const MusicPlayer = () => {
 	const [songID, setSongID] = useState(0);
 	const theme = useTheme();
 
+<<<<<<< HEAD
 	//setting volume
 	
+=======
+
+>>>>>>> origin/master
 	useEffect(() => {
 		// Set initial state based on the first item in the music data array
 		const firstSong = mD[0];

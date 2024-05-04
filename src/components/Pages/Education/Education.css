@@ -1,29 +1,41 @@
-.schools {
-    display: flex;
-    margin-top: 5%;
-    justify-content: center;
-    flex-wrap: wrap;
-    position: relative;
-    
-}
+
 
 .card {
-  position: absolute;
-  width: 200px; /* Adjust width as desired */
-  height: 200px !important; /* Adjust height as desired */
-  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+  height: 10rem;
+  width: calc(33.33% - 20px); /* Set the width of each card to one-third of the container width minus margin */
+  margin-bottom: 20px; /* Add margin at the bottom of each card */
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+  background-image: url(../../../img/ecpi.png);
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.schools{
+  padding: 2rem;
+    flex: 1;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    overflow: hidden;
+    background: linear-gradient(135deg, #141E30, #FFFFFF);
+}
+
+/* Adjust the background image for specific cards */
+#vti {
+  background-image: url(../../../img/vti.png);
+  background-position: center;
+  background-size: cover;
 }
 
 .card svg {
   width: 48px;
   fill: #333;
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .card:hover {
@@ -37,12 +49,12 @@
   left: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
   width: 200px; /* Adjust width as desired */
-  height: 200px !important; /* Adjust height as desired */
+  height: 200px; /* Adjust height as desired */
   padding: 20px;
   box-sizing: border-box;
   background-color: #fff;
   opacity: 0;
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .card:hover .card__content {
