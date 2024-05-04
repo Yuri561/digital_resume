@@ -23,8 +23,6 @@ const MusicPlayer = () => {
 	const [songID, setSongID] = useState(0);
 	const theme = useTheme();
 
-	//setting volume
-	Howler.volume(0.5);
 
 	useEffect(() => {
 		// Set initial state based on the first item in the music data array
