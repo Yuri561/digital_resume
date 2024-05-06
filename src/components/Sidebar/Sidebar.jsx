@@ -24,19 +24,22 @@ const Sidebar = () => {
 
   return (
     <>
-      <aside
-        className="container text-center  d-lg-flex sidebar-container"
-        style={{ width: "18rem" }}
-      >
-        <button
-          className="btn button close-btn d-xl-none d-lg-flex d-md-flex text-light bg-transparent"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasResponsive"
-          aria-controls="offcanvasResponsive"
-        >
-          <UilBars />
-        </button>
+    <aside
+    className="container text-center  d-lg-flex sidebar-container"
+    
+    >
+  
+    
+    <button
+      className="btn button close-btn d-xl-none d-lg-flex d-md-flex text-light bg-dark rounded mx-5 overflow-hidden"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasResponsive"
+      aria-controls="offcanvasResponsive"
+    >
+      <UilBars />
+    </button>
+      
         <div
           className="offcanvas-xl offcanvas-start text-light bg"
           tabIndex="-1"

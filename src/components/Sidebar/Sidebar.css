@@ -10,7 +10,7 @@
 
 
 .close-btn{
-    position: absolute;
+   
     right: 3px !important;
     padding-top: 10px;
 }
@@ -18,7 +18,11 @@
     color: white;
     font-size: 1.5rem;
     cursor: pointer;
+    
 
+}
+.button{
+  ;
 }
 .bg{
     background: black
@@ -35,13 +39,7 @@
     overflow-y: scroll;
 }
 
-.typewrite{
-    font-size: 17px;
-    font-family: "Orbitron", sans-serif;
-    color: #6d83ff;
-    margin-bottom: 25px;
 
-}
 
 .music{
     height: auto;
