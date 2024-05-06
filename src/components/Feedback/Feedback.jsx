@@ -4,7 +4,7 @@ import {FeedbackData} from '../Data/feedbackData';
 
 function Feedback() {
     return (
-        <div className="container feedback-wrapper w-100">
+        <div className="container feedback-wrapper  w-100">
             {FeedbackData.map((update, index) => {
                 return (
                     <div className="feedback" key={index}>

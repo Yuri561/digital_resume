@@ -25,11 +25,11 @@ const Sidebar = () => {
   return (
     <>
       <aside
-        className="container text-center position-relative  sidebar-container"
+        className="container text-center  d-lg-flex sidebar-container"
         style={{ width: "18rem" }}
       >
         <button
-          className="btn close-btn d-xl-none text-light bg-transparent"
+          className="btn button close-btn d-xl-none d-lg-flex d-md-flex text-light bg-transparent"
           type="button"
           data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasResponsive"
@@ -45,7 +45,7 @@ const Sidebar = () => {
         >
           <button
             type="button"
-            className="btn-close close-btn d-none-xl"
+            className="btn-close close-btn d-none-xl d-none-lg d-md-none"
             data-bs-dismiss="offcanvasResponsive"
             aria-label="Close"
           ></button>

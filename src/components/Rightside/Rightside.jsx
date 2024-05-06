@@ -18,7 +18,8 @@ const RightSide = () => {
       <div className="content h-100">
         <h3 className="mt-2">Feedback</h3>
         <Feedback />
-        <SubmitFeedBack id='submit'/>
+        <SubmitFeedBack id='submit' />
+        <FeedbackReview />
       </div>
     </aside>
   );
