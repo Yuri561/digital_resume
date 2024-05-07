@@ -25,15 +25,15 @@ const SubmitFeedBack = () => {
 
       {/* Modal */}
       <div
-        className='modal fade'
+        className='modal fade '
         id='staticBackdrop'
         data-bs-backdrop='static'
         data-bs-keyboard='false'
         tabIndex='-1'
         aria-labelledby='staticBackdropLabel'
         aria-hidden='true'>
-        <div className='modal-dialog dialog-center bg-black'>
-          <div className='modal-content'>
+        <div className='modal-dialog dialog-center '>
+          <div className='modal-content bg-dark rounded'>
             <div className='modal-header'>
               <h1
                 className='modal-title fs-5 text-light'

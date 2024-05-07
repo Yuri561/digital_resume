@@ -10,21 +10,20 @@ const Education = () => {
 			animate={{ scale: 1 }} // Animation: zoom in to full size
 			exit={{ scale: 0 }} // Exit animation: scale down to hide
 			transition={{ type: 'spring', stiffness: 260, damping: 20 }} // Smooth spring transition
-			className=' mt-2 text-center d-flex flex-md-column justify-content-center p-3'>
+			className='text-center d-flex flex-md-column justify-content-center p-3'>
 			<div className='education-content d-flex flex-md-column justify-content-start rounded  h-100'>
-				<Container className='box-group mh-100 justify-content-center align-items-center'>
-					<h1 className='text-center'>Education</h1>
+				<Container className='box-group mh-100 justify-content-center align-items-center p-3'>
+					<h1 className='text-center my-3'>Education</h1>
 					<Row
 						xs={1}
 						md={3}
-						className=' row-cols-2 row-cols-lg-5 row-cols-md-3 g-2 g-lg-3 g-4'>
+						lg={3}
+						className=' row-cols-2 row-cols-lg-3 row-cols-md-3 g-2 g-lg-3 g-4'>
 						{/* Use a unique key for each card */}
 						<Col key={1}>
 							<Card id='vti'>
-								<div className='card__content overflow-y-auto w-100'>
-									<Card.Header className='card__title'>
-										EPA 608 UNIVERSAL
-									</Card.Header>
+								<div className='card__content  overflow-y-auto w-100'>
+									<Card.Header className='card__title'>HVAC/R</Card.Header>
 
 									<Card.Body className='card__description'>
 										In 2019, I attended the Vocational Technical Institute (VTI)
@@ -113,7 +112,7 @@ const Education = () => {
 							<Card className='card' id='ecpi'>
 								<div className='card__content overflow-y-auto w-100'>
 									<Card.Title className='card__title'>
-										Associate of Science in Mechanical Engineering
+										A.A.S M.E.T
 									</Card.Title>
 									<Card.Body className='card__description'>
 										<p>

@@ -2,6 +2,7 @@
   height: 10rem;
   width: 100%; /* Each card takes full width */
   margin-bottom: 20px;
+  font-size: 20px;
   background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
   border-radius: 10px;
   display: flex;
@@ -15,7 +16,7 @@
     justify-content: space-evenly;
     padding: 2rem;
     overflow: hidden;
-    background: linear-gradient(135deg, #141E30, #FFFFFF);
+    background: transparent;
   }
 .card__content {
   position: absolute;
@@ -39,9 +40,9 @@
 
 .card__title {
   margin: 0;
-  font-size: 24px;
+  font-size: 2rem;
   color: #333;
-  font-weight: 700;
+
 }
 
 .card__description {

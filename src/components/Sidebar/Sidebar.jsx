@@ -31,7 +31,7 @@ const Sidebar = () => {
   
     
     <button
-      className="btn button close-btn d-xl-none d-lg-flex d-md-flex text-light bg-dark rounded mx-5 overflow-hidden"
+      className="btn button close-btn d-xl-none d-block text-light bg-dark rounded mx-5 overflow-hidden"
       type="button"
       data-bs-toggle="offcanvas"
       data-bs-target="#offcanvasResponsive"

@@ -1,11 +1,4 @@
-.main-wrapper {
-    height: auto;
-    border-radius: 2rem;
-    background: rgba(0, 0, 0, 0.294);
-    overflow: hidden;
 
-  }
-  
   .title {
     margin-bottom: 2rem;
     font-family: "Jersey 10", sans-serif;
@@ -46,16 +39,19 @@
 
   
   .box-group {
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 2rem;
     overflow: hidden;
     background: linear-gradient(135deg, #141E30, #FFFFFF);
   }
   
   .box {
+    position: relative;
     margin-top: 2rem; /* Adjust margin between title and boxes */
-    width: 10rem;
-    height: 10rem;
+    width: 15rem !important;
+    height: 15rem !important;
+    display: flex;
+    flex-wrap: wrap;
     background: white;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Futuristic box shadow */
     border-radius: 2rem;
