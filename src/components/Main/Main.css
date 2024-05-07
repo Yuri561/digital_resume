@@ -1,4 +1,4 @@
-
+/* 
   .title {
     margin-bottom: 2rem;
     font-family: "Jersey 10", sans-serif;
@@ -35,7 +35,6 @@
     width: 80%;
     padding: 10px;
     border-radius: 5px;
-  }
 
   
   .box-group {
@@ -188,4 +187,132 @@
         flex-direction: column;
         align-items: center;
     }
+} */
+
+
+
+.card {
+  height: 10rem;
+  width: 100%; /* Each card takes full width */
+  margin-bottom: 20px;
+  font-size: 20px;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  cursor: pointer;
+}
+  .box-group {
+    justify-content: space-evenly;
+    padding: 2rem;
+    overflow: hidden;
+    background: transparent;
+  }
+.card__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  
+}
+
+.card:hover .card__content {
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 1;
+}
+
+.card__title {
+  margin: 0;
+  font-size: 2rem;
+  color: #333;
+
+}
+
+.card__description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+ 
+  
+}
+
+/* Specific styles for each card */
+#ecpi {
+  background-image: url(../../../img/ecpi.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+#janbask{
+  background-image: url(../../../img/janbask.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#vti {
+  background-image: url(../../../img/vti.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+#pentesting {
+  background-image: url(../../../img/pentesting.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#cyber{
+  background-image: url(../../../img/cyber.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card:hover {
+  transform: rotate(-5deg) scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 1200px) {
+    .education-content{
+        justify-content:flex-start;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .education-content{
+        align-items: center;
+    }
+}
+@media screen and (max-width: 375px)
+{
+    .education-content{
+        margin: auto;
+        
+    }
+    .box-group{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
 }
