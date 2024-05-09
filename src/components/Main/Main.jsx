@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Main.css';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-
-import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
-import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-import { DateCalendar } from '@mui/x-date-pickers/DateCalendar';
 import VanillaTilt from 'vanilla-tilt';
 import { motion } from 'framer-motion';
 
@@ -60,45 +56,76 @@ const Main = () => {
 			animate={{ scale: 1 }}
 			exit={{ scale: 0 }}
 			transition={{ type: 'spring', stiffness: 260, damping: 20 }}
-			className='text-center d-flex flex-md-column justify-content-center p-3'>
-			<div className='education-content d-flex flex-md-column justify-content-start rounded h-100'>
+			className='text-center d-flex flex-md-column justify-content-md-center p-3 wrapper '>
+			<div className='education-content d-flex flex-column justify-content-start justify-content-sm-center justify-content-xl-start w-100 align-items-center rounded h-100'>
 				<Container className='box-group mh-100 justify-content-center align-items-center p-3'>
-					<h1 className='text-center my-3'>Education</h1>
+					<h1 className='text-center my-3'>Dashboard</h1>
 					<Row
 						xs={1}
 						md={3}
 						lg={3}
-						className=' row-cols-2 row-cols-lg-3 row-cols-md-3 g-2 g-lg-3 g-4'>
+						className='row-cols-2 row-cols-lg-3 row-cols-md-3 g-2 g-lg-3'>
 						<Col key={1}>
-							<Card id='vti'>
-								<div className='card__content overflow-y-auto w-100'>
-									<Card.Header className='card__title'>Favorites</Card.Header>
-									<Card.Body className='card__description'>
+							<Card className='card border-rounded border' id='youtube'>
+								
+								<div className='card__content  card-body overflow-y-auto w-100'>
 										<iframe
 											width='100%'
 											height='100%'
 											className='youtube'
-											src={`https://www.youtube.com/embed/${randomVideo}?autoplay=1&mute=1&controls=1`}
+											src={`https://www.youtube.com/embed/${randomVideo}?autoplay=1&controls=1`}
 											title='News Video'
 											frameBorder='0'
 											allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
 											allowFullScreen
 										/>
-									</Card.Body>
+									
 								</div>
 							</Card>
+							<h2 className='text-center text-white'>Youtube</h2>
 						</Col>
 						<Col key={2}>
-							<Card className='card' id='janbask'>
+							<Card className='card' id='vera1'>
 								<div className='card__content overflow-y-auto w-100'>
-									<Card.Header className='card__title'>Calendar</Card.Header>
-									<Card.Body className='card__description'>
-										<LocalizationProvider dateAdapter={AdapterDayjs}>
-											<DateCalendar className='calendar position-relative' />
-										</LocalizationProvider>
-									</Card.Body>
+									<button className='btn btn-primary my-5'>Activate Vera</button>
 								</div>
 							</Card>
+							<h2 className='text-center text-white'>Vera</h2>
+						</Col>
+						<Col key={3}>
+							<Card className=''></Card>
+							<h2 className='text-center text-white'>ToDo App</h2>
+						</Col>
+						<Col key={4}>
+							<Card className='card border-rounded border' id='youtube'>
+								
+								<div className='card__content  card-body overflow-y-auto w-100'>
+										<iframe
+											width='100%'
+											height='100%'
+											className='youtube'
+											src={`https://www.youtube.com/embed/${randomVideo}?autoplay=1&controls=1`}
+											title='News Video'
+											frameBorder='0'
+											allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+											allowFullScreen
+										/>
+									
+								</div>
+							</Card>
+							<h2 className='text-center text-white'>Youtube</h2>
+						</Col>
+						<Col key={5}>
+							<Card className='card' id='vera1'>
+								<div className='card__content overflow-y-auto w-100'>
+									<button className='btn btn-primary my-5'>Activate Vera</button>
+								</div>
+							</Card>
+							<h2 className='text-center text-white'>Vera</h2>
+						</Col>
+						<Col key={6}>
+							<Card className=''></Card>
+							<h2 className='text-center text-white'>ToDo App</h2>
 						</Col>
 						{/* Additional Card components go here */}
 					</Row>
