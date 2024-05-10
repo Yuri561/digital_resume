@@ -14,15 +14,15 @@ const RightSide = () => {
       });
     }, []);
   return (
-    <aside className="RightSide container w-100">
-      <div className="content h-100">
-        <h3 className="mt-2">Feedback</h3>
-        <Feedback />
-        <SubmitFeedBack id='submit' />
-        <FeedbackReview />
-      </div>
-    </aside>
-  );
+		<aside className='RightSide container w-100 h-100 p-4'>
+			<div className='content h-100'>
+				<h3 className='mt-2 text-center'>Feedback</h3>
+				<Feedback />
+				<SubmitFeedBack id='submit' />
+				<FeedbackReview />
+			</div>
+		</aside>
+	);
 };
 
 export default RightSide;

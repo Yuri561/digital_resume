@@ -123,6 +123,31 @@ const Main = () => {
 							</Card>
 							<h2 className='text-center text-white'>Vera</h2>
 						</Col>
+						<Col key={5}>
+							<Card className='card' id='vera1'>
+								<div className='card__content overflow-y-auto w-100'>
+									<button className='btn btn-primary my-5'>Activate Vera</button>
+								</div>
+							</Card>
+							<h2 className='text-center text-white'>Vera</h2>
+						</Col>
+						<Col key={5}>
+							<Card className='card' id='vera1'>
+								<div className='card__content overflow-y-auto w-100'>
+									<button className='btn btn-primary my-5'>Activate Vera</button>
+								</div>
+							</Card>
+							<h2 className='text-center text-white'>Vera</h2>
+						</Col>
+						<Col key={5}>
+							<Card className='card' id='vera1'>
+								<div className='card__content overflow-y-auto w-100'>
+									<button className='btn btn-primary my-5'>Activate Vera</button>
+								</div>
+							</Card>
+							<h2 className='text-center text-white'>Vera</h2>
+						</Col>
+						
 						<Col key={6}>
 							<Card className=''></Card>
 							<h2 className='text-center text-white'>ToDo App</h2>
