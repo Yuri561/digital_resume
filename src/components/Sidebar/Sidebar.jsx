@@ -10,42 +10,25 @@ import { UilSignOutAlt } from '@iconscout/react-unicons';
 
 const Sidebar = () => {
 	const [selected, setSelected] = useState(0);
-	const [expanded, setExpaned] = useState(true);
+	const [expanded, setExpanded] = useState(true);
 
-	const sidebarVariants = {
-		true: {
-			left: '0',
-		},
-		false: {
-			left: '-60%',
-		},
+	const toggleSidebar = () => {
+		setExpanded(!expanded);
 	};
 
 	return (
-		<aside className='container text-center d-lg-flex  sidebar-container overflow-y-auto'
-    >
-			<div className='d-flex d-xl-none justify-content-end w-100'>
+		<aside className='container text-center d-lg-flex sidebar-container overflow-y-auto'>
+			<div className='d-flex d-md-none justify-content-end w-100'>
 				{/* Show only on medium and small screens */}
 				<button
 					className='btn button close-btn text-light bg-dark rounded mx-5'
 					type='button'
-					data-bs-toggle='offcanvas'
-					data-bs-target='#offcanvasResponsive'
-					aria-controls='offcanvasResponsive'>
+					onClick={toggleSidebar}>
 					<UilBars />
 				</button>
 			</div>
 
-			<div
-				className='offcanvas-lg offcanvas-start text-light bg'
-				tabIndex='-1'
-				id='offcanvasResponsive'
-				aria-labelledby='offcanvasResponsiveLabel'>
-				<button
-					type='button'
-					className='btn-close close-btn '
-					data-bs-dismiss='offcanvasResponsive'
-					aria-label='Close'></button>
+			<div className={`sidebar-content ${expanded ? 'expanded' : 'collapsed'}`}>
 				<Profile />
 				<Menu />
 				<MusicPlayer />
@@ -71,7 +54,6 @@ const Sidebar = () => {
 								<i className='bi bi-github'></i>
 							</a>
 						</ul>
-						{/* Corrected here */}
 					</div>
 				</div>
 			</div>
